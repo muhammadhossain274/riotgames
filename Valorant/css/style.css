@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+template {
+    width: 100%;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #111111;
+    cursor: pointer;
+}
+
+.riotgames {
+    /*this is a image property on header*/
+    width: 50px;
+    margin-left: 35px;
+    margin-top: 15px;
+    padding-right: 25px;
+    float: left;
+    display: flex;
+    border-right: 2px solid #3C3C3C;
+}
+
+.valorant:hover {
+    /* this is a image property on header*/
+    transform: scale(1.5);
+}
+
+.valorant {
+    /*this is also image property on header*/
+    width: 50px;
+    margin-left: 35px;
+    margin-top: 15px;
+    padding-right: 25px;
+    float: left;
+    transition: all .5s;
+}
+
+.option {
+    float: left;
+    height: 80px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.option ul {
+    padding: 0 30px;
+}
+
+.option ul li {
+    display: inline-block;
+    line-height: 80px;
+    color: white;
+    font-size: 13px;
+}
+
+.option ul li a {
+    padding: 0 30px;
+}
+
+.right_button_global {
+    /* this is the right side of header*/
+    float: right;
+    color: white;
+    margin-right: 20px;
+    padding: 25px;
+    padding-right: 10px;
+}
+
+.button {
+    margin-left: 25px;
+    width: 150px;
+    height: 45px;
+    background: #FF4655;
+    border: none;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #FF4655, 0 0 10px #FF4655, 0 0 20px #FF4655;
+}
+
+.button span {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*here ends the header option*/
+
+video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.parent {
+    position: relative;
+}
+
+.image_p_button {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.image_p_button p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 840px;
+    margin-top: 80px;
+}
+
+.subparent {
+    position: relative;
+}
+
+.image_tag img {
+    justify-content: center;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: -130px;
+}
+
+.image_tag button {
+    position: absolute;
+}
+
+
+/* Theming and Assets */
+
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+$primary-color: #FF4655;
+$secondary-color: #26194D;
+$background-color: white;
+$svg-background: 'https://svgshare.com/i/Kyn.svg';
+
+.container {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.button-border {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 950px;
+}
+
+.primary-btn {
+    cursor: pointer;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 5px 75px 36px 75px;
+    background-image: url(../Image/paralal.png);
+    background-size: 130%;
+    background-position: 500%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: border, color, background-position;
+    position: relative;
+    z-index: 1;
+    background-color: #FF4655;
+    color: white;
+    border: none;
+    text-align: center;
+    border: 1px 1px 1px 1px solid white;
+}
+
+.primary-btn span {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.primary-btn:hover {
+    color: white;
+    background-position: 50%;
+    border: none;
+}
+
+.primary-btn:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.primary-btn:hover:before {
+    background-color: #FF4655;
+}
+
+.primary-btn:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0.4rem;
+    height: 0.4rem;
+    bottom: -1px;
+    right: -1px;
+}
+
+.button-border {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-border:before {
+    content: "";
+    position: absolute;
+    width: calc(100%+0.9rem);
+    height: 50%;
+    left: -0.5rem;
+    top: -0.5rem;
+    border: 1px solid #26194D;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+
+/*here ends first one*/
+
+.mid {
+    width: 100%;
+    overflow: visible;
+}
+
+.transparent_bg {
+    background-color: #ECE8E1;
+    height: 700px;
+    padding-bottom: 280px;
+}
+
+.transparent_bg h1 {
+    color: #DFDCD6;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 250PX;
+}
+
+.heading1 {
+    margin-left: 160px;
+    margin-top: -200px;
+    font-size: 300px;
+}
+
+.heading2 {
+    margin-top: -300px;
+    margin-left: 800px;
+}
+
+.heading3 {
+    margin-left: 840px;
+    font-size: 400px;
+}
+
+.mid_parent {
+    position: relative;
+    width: 100%;
+    padding-bottom: px;
+}
+
+.upperFloat_bg {
+    position: absolute;
+    top: 18%;
+}
+
+.upperFloat_bg h1 {
+    justify-content: center;
+    font-size: 98px;
+    font-family: 'Russo One', sans-serif;
+    color: #0F1923;
+    letter-spacing: -0.4rem;
+    font-weight: bold;
+    margin-left: 280px;
+    border-top: 3px solid #C0BFBB;
+}
+
+.mid_pic_details_left {
+    position: absolute;
+    justify-content: center;
+    width: 300px;
+    margin-left: 390px;
+    float: left;
+    top: 25%;
+}
+
+.mid_pic_details_left p {
+    line-height: 25px;
+    color: #8B938C;
+    font-weight: bold;
+}
+
+.mid_pic_details_left h4 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-top: 300px
+}
+
+.mid_pic_details_left h3 {
+    margin-top: 25px;
+    color: #8B938C
+}
+
+.images {
+    position: absolute;
+    top: 47%;
+    right: 3%
+}
+
+.images img {
+    justify-content: center;
+    width: 800px;
+    margin-left: 1200px;
+    filter: brightness(70%);
+}
+
+.empty {
+    position: absolute;
+    top: 67%;
+    left: 75%;
+    padding: 35px 35px;
+    border: 2px solid white;
+    opacity: 0.5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, .2);
+}
+
+.empty:hover {}
+
+.agent {
+    background-image: url(../Image/wallapaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.agent_left {
+    float: left;
+    width: 1300px;
+    position: relative;
+}
+
+.reyna {
+    float: left;
+    margin-top: -1px;
+    position: absolute;
+}
+
+.raze {
+    position: absolute;
+    left: 35%;
+    margin-top: 40px
+}
+
+.agent_info_right {
+    float: right;
+    width: 700px;
+    font-family: 'Anton', sans-serif;
+    color: #ECE8E1;
+    justify-items: center;
+    margin-right: 240px;
+}
+
+.agent_info_right h1 {
+    font-size: 80px;
+    margin-top: 200px;
+    border-top: 2px solid white;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.agent_info_right h4 {
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.agent_info_right p {
+    margin-left: 80px;
+    margin-top: 35px;
+    line-height: 25px;
+    width: 350px;
+}
+
+.agent_info_button {
+    float: right;
+    margin-top: 30%;
+    left: 60%;
+    position: absolute;
+}
+
+.agent_parent {
+    position: relative;
+}
+
+
+/*here is a button*/
+
+.agent_info_button {
+    position: absolute;
+}
+
+.agent_button {
+    cursor: pointer;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 5px 80px 30px 80px;
+    background-image: url(../Image/paralal.png);
+    background-size: 130%;
+    background-position: 500%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: border, color, background-position;
+    position: relative;
+    z-index: 1;
+    background-color: #ECE8E1;
+    color: black;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+.agent_button p {
+    text-align: center;
+    margin-top: 0% 20% 0% 0%
+}
+
+.agent_button:hover {
+    color: white;
+    background-position: 50%;
+    border: none;
+}
+
+.agent_button:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 0.4rem;
+    height: 0.4rem;
+    bottom: -1px;
+    right: -1px;
+}
+
+
+/*button ended*/
+
+.maps {
+    background: #ECE8E1;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.maps_left_info {
+    float: left;
+    margin-top: 200px;
+    margin-left: 120px;
+    position: absolute;
+}
+
+.maps_left_info h1 {
+    font-size: 120px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3rem;
+    margin-left: 250px
+}
+
+.maps_left_info h4 {
+    margin-left: 240px;
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.maps_left_info p {
+    width: 400px;
+    margin-left: 240px;
+    margin-top: 30px;
+    line-height: 20px;
+    color: #768079;
+    font-weight: lighter;
+}
+
+.map_button {}
+
+.maps_right {}
+
+.maps_right img {
+    float: right;
+    margin-top: -80px;
+}
